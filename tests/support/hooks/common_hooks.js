@@ -1,14 +1,17 @@
 const { Before, After, AfterAll, Status } = require('@cucumber/cucumber');
 const logger = require('../../../main/core/utils/logger');
-const driver_manager = require('../../../main/core/selenium/driver_manager');
+const driverManager = require('../../../main/core/selenium/driver_manager');
 const WebDriverActions = require('../../../main/core/utils/ui/web_driver_actions');
+const configurationManager = require('../../../main/core/utils/configuration_manager');
 
 Before(async function(scenario) {
   logger.info(scenario.pickle.name);
 });
 
 Before({ tags: "@ui" }, async function() {
-  await driver_manager.init()
+  const baseUrl = configurationManager.environment.ui_url;
+  await driverManager.init();
+  await WebDriverActions.navigateTo(baseUrl)
 });
 
 After({ tags: '@ui' }, async function (scenario) {
@@ -25,8 +28,8 @@ After({ tags: '@ui' }, async function (scenario) {
 
 
 AfterAll(async function () {
-  if(await driver_manager.driver) {
-    await driver_manager.driver.quit();
+  if(await driverManager.driver) {
+    await driverManager.driver.quit();
     logger.info('All windows were closed.');
   }
 });

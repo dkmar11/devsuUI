@@ -1,0 +1,10 @@
+{
+  "test": {
+    "ui_url": "https://www.saucedemo.com/",
+    "users": {
+      "standard_user": {
+        "password": "secret_sauce" 
+      }
+    }
+  }
+}

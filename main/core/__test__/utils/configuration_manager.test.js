@@ -15,8 +15,8 @@ describe('ConfigurationManager', () => {
     expect(configurationManager.setUp).toHaveProperty('conditions_timeout');
   });
 
-  it('should have the properties "ui-url", "users" on "environment"', () => {
-    expect(configurationManager.environment).toHaveProperty('ui-url');
+  it('should have the properties "ui_url", "users" on "environment"', () => {
+    expect(configurationManager.environment).toHaveProperty('ui_url');
     expect(configurationManager.environment).toHaveProperty('users');
   });
 });
