@@ -1,7 +1,7 @@
 const { By } = require("selenium-webdriver");
 
 /**
- * class to work with inventory page
+ * class to work with header page
  */
 class HeaderPage {
   /**

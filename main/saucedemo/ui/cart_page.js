@@ -15,6 +15,7 @@ class CartPage {
     this.itemName = By.css("div[data-test='inventory-item-name']");
     this.itemDescription = By.css("div[data-test='inventory-item-desc']");
     this.itemPrice = By.css("div[data-test='inventory-item-price']");
+    this.checkoutButton = By.css("button[data-test='checkout']");
   }
   /**
    * method to get all the products from the cart
