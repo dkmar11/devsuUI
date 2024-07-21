@@ -7,3 +7,7 @@ Feature: shopping cart
     When the user adds to cart the followings products from inventory page
       | Sauce Labs Backpack   |
       | Sauce Labs Bike Light |
+    Then the user should be able to see the followings products in the cart
+      | name                  | description                                                                                                                                                     | price  |
+      | Sauc Labs Backpack   | carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.                          | $29.99 |
+      | Sauce Labs Bike Light | A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included. | $9.99  |

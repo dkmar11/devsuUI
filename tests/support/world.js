@@ -9,7 +9,8 @@ const {
 /**
  * Custom World
  */
-function CustomWorld() {
+function CustomWorld({ attach }) {
+  this.attach = attach;
   this.response = {};
   this.body = {};
   /**

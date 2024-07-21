@@ -18,7 +18,7 @@ After({ tags: '@ui' }, async function (scenario) {
   if (scenario.result?.status === Status.FAILED) {
     const screenShot = await WebDriverActions.takeScreenshot();
     if (screenShot) {
-      this.attach(screenShot, 'image/png');
+      this.attach(Buffer.from(screenShot, 'base64'), 'image/png');
     }
   }
   await WebDriverActions.driver.manage().deleteAllCookies();
