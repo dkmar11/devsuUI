@@ -1,0 +1,9 @@
+Este proyecto está basado en mi proyecto:
+
+https://github.com/dkmar11/BDDcore
+Que tiene un enfoque BDD.
+La opción elegida fue la 2 principalmente debido a que tenia un login, sin embargo se debe de aclarar, que a pesar que el repositorio cuenta con las credenciales para el acceso a la plataforma, esto en un ambiente real no se debe realizar.
+Se ha decido usar el atributo data-test, debido que normalmente estos atributos están específicamente para la automatización. Así mismo existe un selector XPATH, que se ah decido usar solo de manera demostrativa, para mostrar habilidad en estos selectores, ya que este tipo de selectores no son tan rápidos, y no es tan recomendable usarlos en exceso.
+Existe la oportunidad de mejora, sobre todo en la abstracción de los pasos del  BDD, ya que se tiene que tomar en cuenta, que se tiene un tiempo limitado para el desarrollo de esta automatización.
+Se a usado como gestor de versionamiento GIT por consiguiente, tiene se debería poder visualizar las ramas y los commits usados en el desarrollo del proyecto.
+Existe un video demostrativo de la ejecución de este repositorio en la carpeta raíz, donde se puede visualizar la ejecución de las pruebas en un browser remoto y en un local.
